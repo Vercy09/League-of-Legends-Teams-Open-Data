@@ -1,0 +1,23 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vercy09/League-of-Legends-Teams-Open-Data.git"
+  },
+  "author": "Luka Marković-Đurin",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/Vercy09/League-of-Legends-Teams-Open-Data/issues"
+  },
+  "homepage": "https://github.com/Vercy09/League-of-Legends-Teams-Open-Data#readme",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
