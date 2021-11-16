@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //definicija ruta
 app.use('/', indexRouter);
-app.use('/data', datatableRouter);
+app.use('/datatable', datatableRouter);
 
 //pokretanje poslužitelja na portu 3000
 app.listen(3000);

@@ -4,6 +4,12 @@ table {
   width: 100%;
 }
 
+.header {
+  text-align: center;
+  font-weight: bold;
+  width: 100%
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -13,3 +19,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.centered-container {
+  margin: 0 auto;
+}
+.container-floated {
+  display: block;
+}
+
+

@@ -1,0 +1,154 @@
+{
+    "$id": "https://github.com/Vercy09/League-of-Legends-Teams-Open-Data",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "League of Legends teams open data",
+    "title": "LoL Teams Open Data",
+    "type": "array",
+    "additionalItems": true,
+    "items": {
+        "type": [],
+        "anyOf": [
+            {
+                "description": "Object containing information about the team.",
+                "required": [
+                    "name",
+                    "acronym",
+                    "headcoach",
+                    "created",
+                    "domestic_titles",
+                    "international_titles",
+                    "org_location",
+                    "league",
+                    "roster",
+                    "sponsors"
+                ],
+                "title": "Team",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "Name of the team.",
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "acronym": {
+                        "description": "Team's acronym used when displaying scoreboard in official games.",
+                        "title": "Acronym",
+                        "type": "string"
+                    },
+                    "headcoach": {
+                        "description": "Head coach of the team.",
+                        "title": "Head coach",
+                        "type": "string"
+                    },
+                    "created": {
+                        "description": "The date when the team was created.",
+                        "title": "Created",
+                        "type": "string"
+                    },
+                    "domestic_titles": {
+                        "description": "Number of domestic titles the team has won (this referes to the Spring and Summer Split of team's respective region).",
+                        "title": "Domestic titles",
+                        "type": "integer"
+                    },
+                    "international_titles": {
+                        "description": "Number of international titles the team has won (this referes to the Mid Season Invitational and World Championship tournaments).",
+                        "title": "International titles",
+                        "type": "integer"
+                    },
+                    "org_location": {
+                        "description": "The country in which the team is based.",
+                        "title": "Org location",
+                        "type": "string"
+                    },
+                    "league": {
+                        "description": "The league in which the team competes",
+                        "title": "League",
+                        "type": "string"
+                    },
+                    "roster": {
+                        "description": "List of the team's players with information about the players.",
+                        "title": "Roster",
+                        "type": "array",
+                        "additionalItems": true,
+                        "items": {
+                            "type": [],
+                            "anyOf": [
+                                {
+                                    "description": "Player of the team's roster",
+                                    "required": [
+                                        "player",
+                                        "name",
+                                        "surname",
+                                        "country",
+                                        "role",
+                                        "contract_ends"
+                                    ],
+                                    "title": "Player",
+                                    "type": "object",
+                                    "properties": {
+                                        "player": {
+                                            "description": "Plyer in-game-name displayed in the official games.",
+                                            "title": "Player",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "description": "Name of the player.",
+                                            "title": "Player name",
+                                            "type": "string"
+                                        },
+                                        "surname": {
+                                            "description": "Surname of the player.",
+                                            "title": "Player surname",
+                                            "type": "string"
+                                        },
+                                        "country": {
+                                            "description": "Player's country of origin",
+                                            "title": "Player country",
+                                            "type": "string"
+                                        },
+                                        "role": {
+                                            "description": "Role which player plays in the official games.",
+                                            "title": "Player role",
+                                            "enum": [
+                                                "Top Laner",
+                                                "Jungler",
+                                                "Mid Laner",
+                                                "Bot Laner",
+                                                "Support",
+                                                "Substitute"
+                                            ],
+                                            "type": "string"
+                                        },
+                                        "contract_ends": {
+                                            "description": "Date when player's contract expires with his current team.",
+                                            "title": "Player contract ends",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }
+                            ]
+                        }
+                    },
+                    "sponsors": {
+                        "description": "List of the team's sponsors/partners",
+                        "title": "Sponsors",
+                        "type": "array",
+                        "additionalItems": true,
+                        "items": {
+                            "type": [],
+                            "anyOf": [
+                                {
+                                    "description": "Team's sponsor/partner.",
+                                    "title": "Sponsor",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}

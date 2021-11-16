@@ -5,7 +5,7 @@ const pool = new Pool({
     host: 'localhost',
     database: 'LoL_Teams',
     password: 'bazepodataka',
-    port: 5432,
+    port: 5433,
 });
 
 module.exports = {
