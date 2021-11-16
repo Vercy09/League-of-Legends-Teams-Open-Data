@@ -4,7 +4,7 @@ Data refers to the official team rosters when the dataset was created and thus d
 
 - Title: League of Legends Teams Open Data
 - Author: Luka Marković-Đurin
-- Version:1.0
+- Version: 2.0
 - Language: English
 - License: Creative Commons Zero v1.0 Universal
 - Creation Date: 02.11.2021.
