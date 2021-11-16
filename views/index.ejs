@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open Data about League of Legends teams">
+    <meta name="keywords" content="League of Legends, E-sports, Teams">
+    <meta name="author" content="Luka Marković-Đurin">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <div class="page" style="margin:0 0 0 0; padding: 0;">
+        <nav class="page__menu menu">
+          <ul class="menu__list r-list" ">
+            <li class=" menu__group"><a href="https://www.riotgames.com/en
+              class="menu__link r-link text-underlined"><img src="../images/logo.png" alt="Logo"
+              style="display: block; margin-top:18px; width:100px; margin-left:10px; margin-right: 15px;"></a></li>
+            <li class="menu__group"><a href="/" class="menu__link r-link text-underlined">Home</a></li>
+            <li class="menu__group"><a href="/datatable" class="menu__link r-link text-underlined">Datatable</a></li>
+            <li class=" menu__group"><a href="data/LoL_Teams.json" download="LoL_Teams.json"
+                class="menu__link r-link" style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/json.png" alt="Logo"
+                style="display: block; width:50px; height: 50px;"></a></li>
+             <li class=" menu__group"><a href="data/LoL_Teams.csv" download="LoL_Teams.csv"
+                class="menu__link r-link" style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/csv.png" alt="Logo"
+                style="display: block; width:50px; height: 50px;"></a></li>
+            <li class=" menu__group" style="margin-right: 0; margin-left: auto;"><a href="https://github.com/Vercy09/League-of-Legends-Teams-Open-Data"
+                class="menu__link r-link" style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/github.png" alt="Logo"
+                style="display: block; width:50px; height: 50px;"></a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="centered-container">
+        <h1>League of Legends Teams Open Data</h1>
+    </div>
+    
+    <hr>
+    <div class="centered-container">
+        Open Data about League of Legends teams avaliable as .json and .csv as well as a database dump. <br>
+        Data refers to the official team rosters when the dataset was created and thus does not include rumors or unofficial roster changes.
+        <div class="container-floated">
+        <ul>
+            <li>Title: League of Legends Teams Open Data</li>
+            <li>Author: Luka Marković-Đurin</li>
+            <li>Version: 2.0</li>
+            <li>Language: English</li>
+            <li>License: Creative Commons Zero v1.0 Universal</li>
+            <li>Creation Date: 02.11.2021.</li>
+            <li>Keywords: League of Legends, E-sports, Teams</li>
+            <li>Date and Time Formats: ISO 8601</li>
+            <li>Encoding: UTF-8</li>
+            <li>File Formats: .json, .csv, .sql</li>
+        </ul>
+    </div>
+    <table>
+        <thead class="header">
+        <tr>
+            <td>Atribute</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+        <tr>
+            <td>Name</td>
+            <td>Name of the team</td>
+        </tr>
+        <tr>
+            <td>Acronym</td>
+            <td>Team's acronym used when displaying scoreboard in official games</td>
+        </tr>
+        <tr>
+            <td>Head Coach</td>
+            <td>Head Coach of the team</td>
+        </tr>
+        <tr>
+            <td>Roster</td>
+            <td>List of the team's players with information about the players</td>
+        </tr>
+        <tr>
+            <td>Created</td>
+            <td>The date when the team was created</td>
+        </tr>
+        <tr>
+            <td>Domestic Titles</td>
+            <td>Number of domestic titles the team has won (this referes to the Spring and Summer Split of team's respective region)</td>
+        </tr>
+        <tr>
+            <td>International Titles</td>
+            <td>Number of international titles the team has won (this referes to the Mid Season Invitational and World Championship tournaments)</td>
+        </tr>
+        <tr>
+            <td>Org location</td>
+            <td>The country in which the team is based</td>
+        </tr>
+        <tr>
+            <td>League</td>
+            <td>The league in which the team competes</td>
+        </tr>
+        <tr>
+            <td>Sponsors</td>
+            <td>List of the team's sponsors/partners</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
