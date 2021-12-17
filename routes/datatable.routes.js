@@ -43,7 +43,8 @@ router.get('/data', async function (req, res, next) {
         team.teamid,
  	    teamname as name, 
 	    teamacronym as acronym, 
-	    concat(coachname, ' "', headcoach, '" ', coachsurname) as headcoach,
+	    --concat(coachname, ' "', headcoach, '" ', coachsurname) as headcoach,
+        headcoach,
 	    --roster
 	    created,	
 	    domestictitles as domestic_titles, 
@@ -54,8 +55,8 @@ router.get('/data', async function (req, res, next) {
     from 
 	    team natural join 
 	    country natural join 
-	    league inner join 
-	    headcoach on(team.teamid = headcoach.teamid)
+	    league --inner join 
+	    --headcoach on(team.teamid = headcoach.teamid)
     `)).rows;
 
     teams.forEach(team => {
