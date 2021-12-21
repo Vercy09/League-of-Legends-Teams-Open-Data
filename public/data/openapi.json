@@ -1,0 +1,685 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "League of Legends Teams API",
+    "description": "API for League of Legends Teams Open Data. https://github.com/Vercy09/League-of-Legends-Teams-Open-Data",
+    "contact": {
+      "email": "lm52473@fer.hr"
+    },
+    "license": {
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/teams": {
+      "get": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Get all data for all teams",
+        "description": "Returns array of team objects for all teams",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 200
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Fetched teams"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Team"
+                      }
+                    },
+                    "links": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Link"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Add a new team",
+        "description": "Pass a team object without id field to be added to the database. Returns team object added to the database with the teamId field.",
+        "operationId": "addTeam",
+        "requestBody": {
+          "description": "Team object to be added to the database",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TeamPost"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 200
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Added team"
+                    },
+                    "response": {
+                      "$ref": "#/components/schemas/Team"
+                    },
+                    "links": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Link"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      }
+    },
+    "/teams/{teamId}": {
+      "get": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Get team by ID",
+        "description": "Returns a single team object with specified ID",
+        "operationId": "getTeamById",
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "ID of team to return",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 200
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Fetched team"
+                    },
+                    "response": {
+                      "$ref": "#/components/schemas/Team"
+                    },
+                    "links": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Link"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Update an existing team",
+        "description": "Updates specified fields of the team object",
+        "operationId": "updateTeam",
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "ID of team to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Team object that needs to be updated",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Team"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied",
+            "content": {}
+          },
+          "404": {
+            "description": "Team not found",
+            "content": {}
+          },
+          "405": {
+            "description": "Validation exception",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "body"
+      },
+      "delete": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Deletes a team",
+        "description": "Deletes a team with specified ID",
+        "operationId": "deleteTeam",
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "ID of team to delete",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied",
+            "content": {}
+          },
+          "404": {
+            "description": "Team not found",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/teams/{teamId}/players": {
+      "get": {
+        "tags": [
+          "teams"
+        ],
+        "summary": "Get players of a team",
+        "description": "Returns an array of player objects for the specified team",
+        "operationId": "getPlayersForTeam",
+        "parameters": [
+          {
+            "name": "teamId",
+            "in": "path",
+            "description": "ID of team to return",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Player"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/players": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "Get all data for all players",
+        "description": "Returns array of player objects for all players",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 200
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Fetched players"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Player"
+                      }
+                    },
+                    "links": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Link"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/players/{playerId}": {
+      "get": {
+        "tags": [
+          "players"
+        ],
+        "summary": "Get player by ID",
+        "description": "Returns a single player object with specified ID",
+        "operationId": "getPlayerById",
+        "parameters": [
+          {
+            "name": "playerId",
+            "in": "path",
+            "description": "ID of team to return",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 200
+                    },
+                    "status": {
+                      "type": "string",
+                      "example": "OK"
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": "Fetched player"
+                    },
+                    "response": {
+                      "$ref": "#/components/schemas/Player"
+                    },
+                    "links": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Link"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Team": {
+        "required": [
+          "acronym",
+          "created",
+          "domestic_titles",
+          "headcoach",
+          "international_titles",
+          "league",
+          "name",
+          "org_location",
+          "teamid"
+        ],
+        "type": "object",
+        "properties": {
+          "teamid": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string",
+            "example": "Cloud9"
+          },
+          "acronym": {
+            "type": "string",
+            "example": "C9"
+          },
+          "headcoach": {
+            "type": "string",
+            "example": "Kim \"Reignover\" Yeu-jin"
+          },
+          "created": {
+            "type": "string",
+            "example": "2012-12-03T00:00:00.000Z"
+          },
+          "domestic_titles": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "international_titles": {
+            "type": "integer",
+            "format": "int64",
+            "example": 0
+          },
+          "org_location": {
+            "type": "string",
+            "example": "United States"
+          },
+          "league": {
+            "type": "string",
+            "example": "LCS"
+          }
+        }
+      },
+      "TeamPost": {
+        "required": [
+          "acronym",
+          "created",
+          "domestic_titles",
+          "headcoach",
+          "international_titles",
+          "league",
+          "name",
+          "org_location"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Cloud9"
+          },
+          "acronym": {
+            "type": "string",
+            "example": "C9"
+          },
+          "headcoach": {
+            "type": "string",
+            "example": "Kim \"Reignover\" Yeu-jin"
+          },
+          "created": {
+            "type": "string",
+            "example": "2012-12-03T00:00:00.000Z"
+          },
+          "domestic_titles": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "international_titles": {
+            "type": "integer",
+            "format": "int64",
+            "example": 0
+          },
+          "org_location": {
+            "type": "string",
+            "example": "United States"
+          },
+          "league": {
+            "type": "string",
+            "example": "LCS"
+          }
+        }
+      },
+      "Player": {
+        "required": [
+          "contract_ends",
+          "country",
+          "name",
+          "player",
+          "playerid",
+          "role",
+          "surname"
+        ],
+        "type": "object",
+        "properties": {
+          "playerid": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "player": {
+            "type": "string",
+            "example": "Perkz"
+          },
+          "name": {
+            "type": "string",
+            "example": "Luka"
+          },
+          "surname": {
+            "type": "string",
+            "example": "Perković"
+          },
+          "country": {
+            "type": "string",
+            "example": "Croatia"
+          },
+          "team": {
+            "type": "string",
+            "example": "Cloud9"
+          },
+          "role": {
+            "type": "string",
+            "example": "Mid Laner"
+          },
+          "contract_ends": {
+            "type": "string",
+            "example": "2023-11-20T00:00:00.000Z"
+          }
+        }
+      },
+      "Error": {
+        "required": [
+          "code",
+          "message",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "object",
+            "nullable": true,
+            "example": null
+          }
+        }
+      },
+      "Link": {
+        "required": [
+          "href",
+          "rel",
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "rel": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
