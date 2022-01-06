@@ -1,3 +1,4 @@
+require('dotenv').config();
 const {Pool} = require('pg');
 
 let localDBInfo = {
@@ -9,11 +10,11 @@ let localDBInfo = {
 };
 
 let remoteDBInfo = {
-    user: 'etokrrlfcsubmu',
-    host: 'ec2-52-30-133-191.eu-west-1.compute.amazonaws.com',
-    database: 'dcf0htq73frf29',
-    password: '5a9b758f31538106b9d4459c30b338c882223f2268111e481fb87a5371cbb8c5',
-    port: 5432,
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB,
+    password: process.env.DB_PASS,
+    port: process.env.DB_PORT,
     ssl: {
         rejectUnauthorized: false
     }
