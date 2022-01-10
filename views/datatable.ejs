@@ -60,23 +60,33 @@
     <div class="page" style="margin:0 0 0 0; padding: 0;">
         <nav class="page__menu menu">
             <ul class="menu__list r-list" ">
-              <li class=" menu__group"><a href="https://www.riotgames.com/en
-              class=" menu__link r-link text-underlined"><img src="../images/logo.png" alt="Logo"
-                        style="display: block; margin-top:18px; width:100px; margin-left:10px; margin-right: 15px;"></a>
-                </li>
-                <li class="menu__group"><a href="/" class="menu__link r-link text-underlined">Home</a></li>
-                <li class="menu__group"><a href="/datatable" class="menu__link r-link text-underlined">Datatable</a>
-                </li>
-                <li class=" menu__group"><a id="download" onclick="getJSON()" class="menu__link r-link"
-                        style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/json.png" alt="Logo"
-                            style="display: block; width:50px; height: 50px;"></a></li>
+                <li class=" menu__group"><a href="https://www.riotgames.com/en
+                    class="menu__link r-link text-underlined"><img src="../images/logo.png" alt="Logo"
+                    style="display: block; margin-top:18px; width:100px; margin-left:10px; margin-right: 15px;"></a></li>
+                  <li class="menu__group"><a href="/" class="menu__link r-link text-underlined">Home</a></li>
+                  <li class="menu__group"><a href="/datatable" class="menu__link r-link text-underlined">Datatable</a></li>
+                  <% if (loggedin) {%>  <li class="menu__group"><a href="/profile" class="menu__link r-link text-underlined">Profile</a></li>   <% } %>
+                  <li class=" menu__group"><a id="download" onclick="getJSON()" class="menu__link r-link"
+                    style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/json.png" alt="Logo"
+                        style="display: block; width:50px; height: 50px;"></a></li>
                 <li class=" menu__group"><a id="download" onclick="getCSV()" class="menu__link r-link"
-                        style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/csv.png" alt="Logo"
-                            style="display: block; width:50px; height: 50px;"></a></li>
-                <li class=" menu__group" style="margin-right: 0; margin-left: auto;"><a
-                        href="https://github.com/Vercy09/League-of-Legends-Teams-Open-Data" class="menu__link r-link"
-                        style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/github.png" alt="Logo"
-                            style="display: block; width:50px; height: 50px;"></a></li>
+                    style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/csv.png" alt="Logo"
+                        style="display: block; width:50px; height: 50px;"></a></li>
+      
+                      <% if (loggedin) {%>
+                           <li class=" menu__group" style="margin-right: 0; margin-left: auto;">
+                              <a href="http://localhost:3000/logout" class="menu__link r-link text-underlined">
+                                 Log out
+                              </a>
+                          </li>
+                      <% } %>
+                      <% if (!loggedin) {%>
+                          <li class=" menu__group" style="margin-right: 0; margin-left: auto;">
+                              <a href="http://localhost:3000/login" class="menu__link r-link text-underlined">
+                                 Log in
+                              </a>
+                          </li>
+                      <% } %>
             </ul>
         </nav>
     </div>

@@ -6,6 +6,7 @@ module.exports = {
 
 
   */
+  
   getPlayers: async (options) => {
 
     // Implement your business logic here...
@@ -30,13 +31,21 @@ module.exports = {
         "links": "<array>"
       },
       status = '200';
-
+  
+    const playerContext = {
+        "name": "https://schema.org/givenName",
+        "surname": "https://schema.org/familyName",
+        "contract_ends": "https://schema.org/Date"
+    }
 
     let players = await dbGetPlayers();
 
 
     if (players.length == 0 || players == undefined) throw new Error('Internal server error');
 
+    players.forEach(player => {
+      player['@context'] = playerContext;
+    });
 
     data.code = 200;
     data.status = 'OK';
@@ -79,6 +88,12 @@ module.exports = {
         "links": "<array>"
       },
       status = '200';
+    
+    const playerContext = {
+        "name": "https://schema.org/givenName",
+        "surname": "https://schema.org/familyName",
+        "contract_ends": "https://schema.org/Date"
+    }
 
     let id = Number.parseInt(options.playerId);
     console.log(id);
@@ -101,6 +116,7 @@ module.exports = {
         data.response = null;
         data.links = null;
       } else {
+        player['@context'] = playerContext;
         data.code = 200;
         data.status = "OK";
         data.message = "Fetched player";

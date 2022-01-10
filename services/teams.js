@@ -495,6 +495,11 @@ module.exports = {
       },
       status = '200';
 
+    const playerContext = {
+        "name": "https://schema.org/givenName",
+        "surname": "https://schema.org/familyName",
+        "contract_ends": "https://schema.org/Date"
+    }
 
 
 
@@ -520,6 +525,9 @@ module.exports = {
         data.response = null;
         data.links = null;
       } else {
+        players.forEach(player => {
+          player['@context'] = playerContext;
+        });
         data.code = 200;
         data.status = "OK";
         data.message = "Fetched team's players";

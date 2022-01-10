@@ -6,7 +6,8 @@ const jsonToTable = require('json-to-table');
 router.get('/', async function (req, res, next) {
    
     res.render('datatable', {
-        title: 'Data'
+        title: 'Data',
+        loggedin: req.oidc.isAuthenticated()
     });
     
 });

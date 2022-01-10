@@ -1,65 +1,8 @@
 [
     {
-        "name": "100 Thieves",
-        "acronym": "100",
-        "headcoach": "Bok \"Reapered\" Han-gyu",
-        "created": "2017-11-19",
-        "domestic_titles": 1,
-        "international_titles": 0,
-        "org_location": "United States",
-        "league": "LCS",
-        "roster": [
-            {
-                "player": "Ssumday",
-                "name": "Kim",
-                "surname": "Chan-ho",
-                "country": "South Korea",
-                "role": "Top Laner",
-                "contract_ends": "2022-11-14"
-            },
-            {
-                "player": "Closer",
-                "name": "Can",
-                "surname": "Çelik",
-                "country": "Turkey",
-                "role": "Jungler",
-                "contract_ends": "2023-11-20"
-            },
-            {
-                "player": "Abbedagge",
-                "name": "Felix",
-                "surname": "Braun",
-                "country": "Germany",
-                "role": "Mid Laner",
-                "contract_ends": "2023-11-20"
-            },
-            {
-                "player": "FBI",
-                "name": "Ian Victor",
-                "surname": "Huang",
-                "country": "Australia",
-                "role": "Bot Laner",
-                "contract_ends": "2023-11-20"
-            },
-            {
-                "player": "huhi",
-                "name": "Choi",
-                "surname": "Jae-hyun",
-                "country": "South Korea",
-                "role": "Support",
-                "contract_ends": "2023-11-20"
-            }
-        ],
-        "sponsors": [
-            "Razer",
-            "Red Bull",
-            "SecretLab"
-        ]
-    },
-    {
         "name": "Cloud9",
         "acronym": "C9",
-        "headcoach": "Alfonso \"Mithy\" Aguirre Rodríguez",
+        "headcoach": "Kim \"Reignover\" Yeu-jin",
         "created": "2012-12-03",
         "domestic_titles": 4,
         "international_titles": 0,
@@ -119,77 +62,316 @@
         ]
     },
     {
-        "name": "DetonatioN FocusMe",
-        "acronym": "DFM",
-        "headcoach": "Yang \"Yang\" Gwang-pyo",
-        "created": "2013-04-12",
-        "domestic_titles": 12,
-        "international_titles": 0,
-        "org_location": "Japan",
-        "league": "LJL",
+        "name": "G2 Esports",
+        "acronym": "G2",
+        "headcoach": "Fabian \"GrabbZ\" Lohmann",
+        "created": "2015-10-14",
+        "domestic_titles": 8,
+        "international_titles": 1,
+        "org_location": "Germany",
+        "league": "LEC",
         "roster": [
             {
-                "player": "Steal",
-                "name": "Mun",
-                "surname": "Geon-yeong",
-                "country": "South Korea",
-                "role": "Jungler",
-                "contract_ends": "2021-11-15"
-            },
-            {
-                "player": "Evi",
-                "name": "Shunsuke",
-                "surname": "Murase",
-                "country": "Japan",
+                "player": "Wunder",
+                "name": "Martin",
+                "surname": "Nordahl Hansen",
+                "country": "Denmark",
                 "role": "Top Laner",
-                "contract_ends": "2021-11-15"
+                "contract_ends": "2022-11-20"
             },
             {
-                "player": "Aria",
-                "name": "Lee",
-                "surname": "Ga-eul",
-                "country": "South Korea",
+                "player": "Jankos",
+                "name": "Marcin",
+                "surname": "Jankowski",
+                "country": "Poland",
+                "role": "Jungler",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Caps",
+                "name": "Rasmus",
+                "surname": "Borregaard Winther",
+                "country": "Denmark",
                 "role": "Mid Laner",
-                "contract_ends": "2021-11-15"
+                "contract_ends": "2023-11-19"
             },
             {
-                "player": "Yutapon",
-                "name": "Yuta",
-                "surname": "Sugiura",
-                "country": "Japan",
+                "player": "Rekkles",
+                "name": "Martin",
+                "surname": "Larsson",
+                "country": "Sweden",
                 "role": "Bot Laner",
-                "contract_ends": "2021-11-15"
+                "contract_ends": "2023-11-19"
             },
             {
-                "player": "Gaeng",
-                "name": "Yang",
-                "surname": "Gwang-woo",
-                "country": "South Korea",
+                "player": "Mikyx",
+                "name": "Mihael",
+                "surname": "Mehle",
+                "country": "Slovenia",
                 "role": "Support",
-                "contract_ends": "2021-11-15"
+                "contract_ends": "2022-11-20"
             },
             {
-                "player": "Ceros",
-                "name": "Kyohei",
-                "surname": "Yoshida",
-                "country": "Japan",
+                "player": "P1noy",
+                "name": "Kristoffer",
+                "surname": "Albao Lund Pedersen",
+                "country": "Denmark",
                 "role": "Substitute",
-                "contract_ends": "2021-11-15"
-            },
-            {
-                "player": "Kazu",
-                "name": "Kazuta",
-                "surname": "Suzuki",
-                "country": "Japan",
-                "role": "Substitute",
-                "contract_ends": "2021-11-15"
+                "contract_ends": "2021-11-14"
             }
         ],
         "sponsors": [
             "Logitech G",
-            "NVIDIA",
-            "GIGABYTE",
-            "HyperX"
+            "SecretLab",
+            "Twitch",
+            "BMW",
+            "Adidas"
+        ]
+    },
+    {
+        "name": "Fnatic",
+        "acronym": "FNC",
+        "headcoach": "Jakob \"YamatoCannon\" Mebdi",
+        "created": "2011-03-13",
+        "domestic_titles": 7,
+        "international_titles": 1,
+        "org_location": "United Kingdom",
+        "league": "LEC",
+        "roster": [
+            {
+                "player": "Adam",
+                "name": "Adam",
+                "surname": "Maanane",
+                "country": "France",
+                "role": "Top Laner",
+                "contract_ends": "2023-11-19"
+            },
+            {
+                "player": "Bwipo",
+                "name": "Gabriël",
+                "surname": "Rau",
+                "country": "Belgium",
+                "role": "Jungler",
+                "contract_ends": "2021-11-14"
+            },
+            {
+                "player": "Nisqy",
+                "name": "Yasin",
+                "surname": "Dinçer",
+                "country": "Belgium",
+                "role": "Mid Laner",
+                "contract_ends": "2023-11-19"
+            },
+            {
+                "player": "Upset",
+                "name": "Elias",
+                "surname": "Lipp",
+                "country": "Germany",
+                "role": "Bot Laner",
+                "contract_ends": "2023-11-19"
+            },
+            {
+                "player": "Hylissang",
+                "name": "Zdravets",
+                "surname": "Iliev Galabov",
+                "country": "Bulgaria",
+                "role": "Support",
+                "contract_ends": "2021-11-14"
+            }
+        ],
+        "sponsors": [
+            "OnePlus",
+            "Monster Energy",
+            "AMD",
+            "BMW"
+        ]
+    },
+    {
+        "name": "MAD Lions",
+        "acronym": "MAD",
+        "headcoach": "James \"Mac\" MacCormack",
+        "created": "2019-11-28",
+        "domestic_titles": 2,
+        "international_titles": 0,
+        "org_location": "Spain",
+        "league": "LEC",
+        "roster": [
+            {
+                "player": "Armut",
+                "name": "İrfan Berk",
+                "surname": "Tükek",
+                "country": "Turkey",
+                "role": "Top Laner",
+                "contract_ends": "2023-11-19"
+            },
+            {
+                "player": "Elyoya",
+                "name": "Javier",
+                "surname": "Prades Batalla",
+                "country": "Spain",
+                "role": "Jungler",
+                "contract_ends": "2023-11-19"
+            },
+            {
+                "player": "Humanoid",
+                "name": "Marek",
+                "surname": "Brázda",
+                "country": "Czech Republic",
+                "role": "Mid Laner",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Carzzy",
+                "name": "Matyáš",
+                "surname": "Orság",
+                "country": "Czech Republic",
+                "role": "Bot Laner",
+                "contract_ends": "2021-11-14"
+            },
+            {
+                "player": "Kaiser",
+                "name": "Norman",
+                "surname": "Kaiser",
+                "country": "Germany",
+                "role": "Support",
+                "contract_ends": "2023-11-19"
+            }
+        ],
+        "sponsors": []
+    },
+    {
+        "name": "100 Thieves",
+        "acronym": "100",
+        "headcoach": "Bok \"Reapered\" Han-gyu",
+        "created": "2017-11-19",
+        "domestic_titles": 1,
+        "international_titles": 0,
+        "org_location": "United States",
+        "league": "LCS",
+        "roster": [
+            {
+                "player": "Ssumday",
+                "name": "Kim",
+                "surname": "Chan-ho",
+                "country": "South Korea",
+                "role": "Top Laner",
+                "contract_ends": "2022-11-14"
+            },
+            {
+                "player": "Closer",
+                "name": "Can",
+                "surname": "Çelik",
+                "country": "Turkey",
+                "role": "Jungler",
+                "contract_ends": "2023-11-20"
+            },
+            {
+                "player": "Abbedagge",
+                "name": "Felix",
+                "surname": "Braun",
+                "country": "Germany",
+                "role": "Mid Laner",
+                "contract_ends": "2023-11-20"
+            },
+            {
+                "player": "FBI",
+                "name": "Ian Victor",
+                "surname": "Huang",
+                "country": "Australia",
+                "role": "Bot Laner",
+                "contract_ends": "2023-11-20"
+            },
+            {
+                "player": "huhi",
+                "name": "Choi",
+                "surname": "Jae-hyun",
+                "country": "South Korea",
+                "role": "Support",
+                "contract_ends": "2023-11-20"
+            }
+        ],
+        "sponsors": [
+            "Razer",
+            "Red Bull",
+            "SecretLab"
+        ]
+    },
+    {
+        "name": "T1",
+        "acronym": "T1",
+        "headcoach": "Son \"Stardust\" Seok-hee (Interim)",
+        "created": "2014-02-14",
+        "domestic_titles": 9,
+        "international_titles": 5,
+        "org_location": "South Korea",
+        "league": "LCK",
+        "roster": [
+            {
+                "player": "Canna",
+                "name": "Kim",
+                "surname": "Chang-dong",
+                "country": "South Korea",
+                "role": "Top Laner",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Oner",
+                "name": "Moon",
+                "surname": "Hyeon-joon",
+                "country": "South Korea",
+                "role": "Jungler",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Faker",
+                "name": "Lee",
+                "surname": "Sang-hyeok",
+                "country": "South Korea",
+                "role": "Mid Laner",
+                "contract_ends": "2021-11-14"
+            },
+            {
+                "player": "Gumayusi",
+                "name": "Lee",
+                "surname": "Min-hyeong",
+                "country": "South Korea",
+                "role": "Bot Laner",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Keria",
+                "name": "Ryu",
+                "surname": "Min-seok",
+                "country": "South Korea",
+                "role": "Support",
+                "contract_ends": "2022-11-14"
+            },
+            {
+                "player": "Teddy",
+                "name": "Park",
+                "surname": "Jin-seong",
+                "country": "South Korea",
+                "role": "Substitute",
+                "contract_ends": "2022-11-20"
+            },
+            {
+                "player": "Cuzz",
+                "name": "Moon",
+                "surname": "Woo-chan",
+                "country": "South Korea",
+                "role": "Substitute",
+                "contract_ends": "2021-11-14"
+            }
+        ],
+        "sponsors": [
+            "Douyu",
+            "Nike",
+            "Logitech G",
+            "SecretLab",
+            "OnePlus",
+            "BMW",
+            "Twitch",
+            "Red Bull"
         ]
     },
     {
@@ -267,256 +449,6 @@
         ]
     },
     {
-        "name": "EDward Gaming",
-        "acronym": "EDG",
-        "headcoach": "Yang \"Maokai\" Ji-Song",
-        "created": "2014-02-06",
-        "domestic_titles": 6,
-        "international_titles": 1,
-        "org_location": "China",
-        "league": "LPL",
-        "roster": [
-            {
-                "player": "Flandre",
-                "name": "Li",
-                "surname": "Xuan-Jun",
-                "country": "China",
-                "role": "Top Laner",
-                "contract_ends": "2022-11-21"
-            },
-            {
-                "player": "Jiejie",
-                "name": "Zhao",
-                "surname": "Li-Jie",
-                "country": "China",
-                "role": "Jungler",
-                "contract_ends": "2023-11-20"
-            },
-            {
-                "player": "Scout",
-                "name": "Lee",
-                "surname": "Ye-chan",
-                "country": "South Korea",
-                "role": "Mid Laner",
-                "contract_ends": "2022-11-21"
-            },
-            {
-                "player": "Viper",
-                "name": "Park",
-                "surname": "Do-hyeon",
-                "country": "South Korea",
-                "role": "Bot Laner",
-                "contract_ends": "2021-11-15"
-            },
-            {
-                "player": "Meiko",
-                "name": "Tian",
-                "surname": "Ye",
-                "country": "China",
-                "role": "Support",
-                "contract_ends": "2022-11-21"
-            },
-            {
-                "player": "Clearlove",
-                "name": "Ming",
-                "surname": "Kai",
-                "country": "China",
-                "role": "Substitute",
-                "contract_ends": "2021-11-15"
-            },
-            {
-                "player": "JunJia",
-                "name": "Yu",
-                "surname": "Chun-Chia",
-                "country": "Taiwan",
-                "role": "Substitute",
-                "contract_ends": "2021-11-15"
-            }
-        ],
-        "sponsors": [
-            "Intel",
-            "Acer"
-        ]
-    },
-    {
-        "name": "Fnatic",
-        "acronym": "FNC",
-        "headcoach": "Jakob \"YamatoCannon\" Mebdi",
-        "created": "2011-03-13",
-        "domestic_titles": 7,
-        "international_titles": 1,
-        "org_location": "United Kingdom",
-        "league": "LEC",
-        "roster": [
-            {
-                "player": "Adam",
-                "name": "Adam",
-                "surname": "Maanane",
-                "country": "France",
-                "role": "Top Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Bwipo",
-                "name": "Gabriël",
-                "surname": "Rau",
-                "country": "Belgium",
-                "role": "Jungler",
-                "contract_ends": "2021-11-14"
-            },
-            {
-                "player": "Nisqy",
-                "name": "Yasin",
-                "surname": "Dinçer",
-                "country": "Belgium",
-                "role": "Mid Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Upset",
-                "name": "Elias",
-                "surname": "Lipp",
-                "country": "Germany",
-                "role": "Bot Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Hylissang",
-                "name": "Zdravets",
-                "surname": "Iliev Galabov",
-                "country": "Bulgaria",
-                "role": "Support",
-                "contract_ends": "2021-11-14"
-            }
-        ],
-        "sponsors": [
-            "OnePlus",
-            "Monster Energy",
-            "AMD",
-            "BMW"
-        ]
-    },
-    {
-        "name": "G2 Esports",
-        "acronym": "G2",
-        "headcoach": "Fabian \"GrabbZ\" Lohmann",
-        "created": "2015-10-14",
-        "domestic_titles": 8,
-        "international_titles": 1,
-        "org_location": "Germany",
-        "league": "LEC",
-        "roster": [
-            {
-                "player": "Wunder",
-                "name": "Martin",
-                "surname": "Nordahl Hansen",
-                "country": "Denmark",
-                "role": "Top Laner",
-                "contract_ends": "2022-11-20"
-            },
-            {
-                "player": "Jankos",
-                "name": "Marcin",
-                "surname": "Jankowski",
-                "country": "Poland",
-                "role": "Jungler",
-                "contract_ends": "2022-11-20"
-            },
-            {
-                "player": "Caps",
-                "name": "Rasmus",
-                "surname": "Borregaard Winther",
-                "country": "Denmark",
-                "role": "Mid Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Rekkles",
-                "name": "Martin",
-                "surname": "Larsson",
-                "country": "Sweden",
-                "role": "Bot Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Mikyx",
-                "name": "Mihael",
-                "surname": "Mehle",
-                "country": "Slovenia",
-                "role": "Support",
-                "contract_ends": "2022-11-20"
-            },
-            {
-                "player": "P1noy",
-                "name": "Kristoffer",
-                "surname": "Albao Lund Pedersen",
-                "country": "Denmark",
-                "role": "Substitute",
-                "contract_ends": "2021-11-14"
-            }
-        ],
-        "sponsors": [
-            "Logitech G",
-            "SecretLab",
-            "Twitch",
-            "BMW",
-            "Adidas"
-        ]
-    },
-    {
-        "name": "MAD Lions",
-        "acronym": "MAD",
-        "headcoach": "James \"Mac\" MacCormack",
-        "created": "2019-11-28",
-        "domestic_titles": 2,
-        "international_titles": 0,
-        "org_location": "Spain",
-        "league": "LEC",
-        "roster": [
-            {
-                "player": "Armut",
-                "name": "İrfan Berk",
-                "surname": "Tükek",
-                "country": "Turkey",
-                "role": "Top Laner",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Elyoya",
-                "name": "Javier",
-                "surname": "Prades Batalla",
-                "country": "Spain",
-                "role": "Jungler",
-                "contract_ends": "2023-11-19"
-            },
-            {
-                "player": "Humanoid",
-                "name": "Marek",
-                "surname": "Brázda",
-                "country": "Czech Republic",
-                "role": "Mid Laner",
-                "contract_ends": "2022-11-20"
-            },
-            {
-                "player": "Carzzy",
-                "name": "Matyáš",
-                "surname": "Orság",
-                "country": "Czech Republic",
-                "role": "Bot Laner",
-                "contract_ends": "2021-11-14"
-            },
-            {
-                "player": "Kaiser",
-                "name": "Norman",
-                "surname": "Kaiser",
-                "country": "Germany",
-                "role": "Support",
-                "contract_ends": "2023-11-19"
-            }
-        ],
-        "sponsors": []
-    },
-    {
         "name": "Royal Never Give Up",
         "acronym": "RNG",
         "headcoach": "Wong \"Tabe\" Pak Kan",
@@ -591,81 +523,185 @@
         ]
     },
     {
-        "name": "T1",
-        "acronym": "T1",
-        "headcoach": "Son \"Stardust\" Seok-hee",
-        "created": "2014-02-14",
-        "domestic_titles": 9,
-        "international_titles": 5,
-        "org_location": "South Korea",
-        "league": "LCK",
+        "name": "EDward Gaming",
+        "acronym": "EDG",
+        "headcoach": "Yang \"Maokai\" Ji-Song",
+        "created": "2014-02-06",
+        "domestic_titles": 6,
+        "international_titles": 1,
+        "org_location": "China",
+        "league": "LPL",
         "roster": [
             {
-                "player": "Canna",
-                "name": "Kim",
-                "surname": "Chang-dong",
-                "country": "South Korea",
+                "player": "Flandre",
+                "name": "Li",
+                "surname": "Xuan-Jun",
+                "country": "China",
                 "role": "Top Laner",
-                "contract_ends": "2022-11-20"
+                "contract_ends": "2022-11-21"
             },
             {
-                "player": "Oner",
-                "name": "Moon",
-                "surname": "Hyeon-joon",
-                "country": "South Korea",
+                "player": "Jiejie",
+                "name": "Zhao",
+                "surname": "Li-Jie",
+                "country": "China",
                 "role": "Jungler",
-                "contract_ends": "2022-11-20"
+                "contract_ends": "2023-11-20"
             },
             {
-                "player": "Faker",
+                "player": "Scout",
                 "name": "Lee",
-                "surname": "Sang-hyeok",
+                "surname": "Ye-chan",
                 "country": "South Korea",
                 "role": "Mid Laner",
-                "contract_ends": "2021-11-14"
+                "contract_ends": "2022-11-21"
             },
             {
-                "player": "Gumayusi",
-                "name": "Lee",
-                "surname": "Min-hyeong",
+                "player": "Viper",
+                "name": "Park",
+                "surname": "Do-hyeon",
                 "country": "South Korea",
                 "role": "Bot Laner",
-                "contract_ends": "2022-11-20"
+                "contract_ends": "2021-11-15"
             },
             {
-                "player": "Keria",
-                "name": "Ryu",
-                "surname": "Min-seok",
-                "country": "South Korea",
+                "player": "Meiko",
+                "name": "Tian",
+                "surname": "Ye",
+                "country": "China",
                 "role": "Support",
-                "contract_ends": "2022-11-14"
+                "contract_ends": "2022-11-21"
             },
             {
-                "player": "Teddy",
-                "name": "Park",
-                "surname": "Jin-seong",
-                "country": "South Korea",
+                "player": "Clearlove",
+                "name": "Ming",
+                "surname": "Kai",
+                "country": "China",
                 "role": "Substitute",
-                "contract_ends": "2022-11-20"
+                "contract_ends": "2021-11-15"
             },
             {
-                "player": "Cuzz",
-                "name": "Moon",
-                "surname": "Woo-chan",
-                "country": "South Korea",
+                "player": "JunJia",
+                "name": "Yu",
+                "surname": "Chun-Chia",
+                "country": "Taiwan",
                 "role": "Substitute",
-                "contract_ends": "2021-11-14"
+                "contract_ends": "2021-11-15"
             }
         ],
         "sponsors": [
-            "Douyu",
-            "Nike",
-            "Logitech G",
-            "SecretLab",
-            "OnePlus",
-            "BMW",
-            "Twitch",
-            "Red Bull"
+            "Intel",
+            "Acer"
         ]
+    },
+    {
+        "name": "DetonatioN FocusMe",
+        "acronym": "DFM",
+        "headcoach": "Yang \"Yang\" Gwang-pyo",
+        "created": "2013-04-12",
+        "domestic_titles": 12,
+        "international_titles": 0,
+        "org_location": "Japan",
+        "league": "LJL",
+        "roster": [
+            {
+                "player": "Steal",
+                "name": "Mun",
+                "surname": "Geon-yeong",
+                "country": "South Korea",
+                "role": "Jungler",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Evi",
+                "name": "Shunsuke",
+                "surname": "Murase",
+                "country": "Japan",
+                "role": "Top Laner",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Aria",
+                "name": "Lee",
+                "surname": "Ga-eul",
+                "country": "South Korea",
+                "role": "Mid Laner",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Yutapon",
+                "name": "Yuta",
+                "surname": "Sugiura",
+                "country": "Japan",
+                "role": "Bot Laner",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Gaeng",
+                "name": "Yang",
+                "surname": "Gwang-woo",
+                "country": "South Korea",
+                "role": "Support",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Ceros",
+                "name": "Kyohei",
+                "surname": "Yoshida",
+                "country": "Japan",
+                "role": "Substitute",
+                "contract_ends": "2021-11-15"
+            },
+            {
+                "player": "Kazu",
+                "name": "Kazuta",
+                "surname": "Suzuki",
+                "country": "Japan",
+                "role": "Substitute",
+                "contract_ends": "2021-11-15"
+            }
+        ],
+        "sponsors": [
+            "Logitech G",
+            "NVIDIA",
+            "GIGABYTE",
+            "HyperX"
+        ]
+    },
+    {
+        "name": "Rouge",
+        "acronym": "RGE",
+        "headcoach": "John Smith",
+        "created": "2019-11-02",
+        "domestic_titles": 0,
+        "international_titles": 0,
+        "org_location": "United States",
+        "league": "LEC",
+        "roster": [],
+        "sponsors": []
+    },
+    {
+        "name": "Joe",
+        "acronym": "JOE",
+        "headcoach": "Johny Smimiimim",
+        "created": "2019-11-08",
+        "domestic_titles": 3,
+        "international_titles": 1,
+        "org_location": "China",
+        "league": "LPL",
+        "roster": [],
+        "sponsors": []
+    },
+    {
+        "name": "TestTeam123",
+        "acronym": "TES",
+        "headcoach": "Test Headcoach",
+        "created": "2021-12-21",
+        "domestic_titles": 0,
+        "international_titles": 0,
+        "org_location": "China",
+        "league": "LPL",
+        "roster": [],
+        "sponsors": []
     }
 ]

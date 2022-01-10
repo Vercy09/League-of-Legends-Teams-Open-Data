@@ -519,7 +519,7 @@
           },
           "created": {
             "type": "string",
-            "example": "2012-12-03T00:00:00.000Z"
+            "example": "2012-12-03"
           },
           "domestic_titles": {
             "type": "integer",
@@ -568,7 +568,7 @@
           },
           "created": {
             "type": "string",
-            "example": "2012-12-03T00:00:00.000Z"
+            "example": "2012-12-03"
           },
           "domestic_titles": {
             "type": "integer",
@@ -632,7 +632,10 @@
           },
           "contract_ends": {
             "type": "string",
-            "example": "2023-11-20T00:00:00.000Z"
+            "example": "2023-11-20"
+          },
+          "@context": {
+            "$ref": "#/components/schemas/PlayerContext"
           }
         }
       },
@@ -677,6 +680,23 @@
           },
           "type": {
             "type": "string"
+          }
+        }
+      },
+      "PlayerContext": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "https://schema.org/givenName"
+          },
+          "surname": {
+            "type": "string",
+            "example": "https://schema.org/familyName"
+          },
+          "contract_ends": {
+            "type": "string",
+            "example": "https://schema.org/Date"
           }
         }
       }

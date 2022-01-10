@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open Data about League of Legends teams">
+    <meta name="keywords" content="League of Legends, E-sports, Teams">
+    <meta name="author" content="Luka Marković-Đurin">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <div class="page" style="margin:0 0 0 0; padding: 0;">
+        <nav class="page__menu menu">
+          <ul class="menu__list r-list" ">
+            <li class=" menu__group"><a href="https://www.riotgames.com/en
+              class="menu__link r-link text-underlined"><img src="../images/logo.png" alt="Logo"
+              style="display: block; margin-top:18px; width:100px; margin-left:10px; margin-right: 15px;"></a></li>
+            <li class="menu__group"><a href="/" class="menu__link r-link text-underlined">Home</a></li>
+            <li class="menu__group"><a href="/datatable" class="menu__link r-link text-underlined">Datatable</a></li>
+            <li class="menu__group"><a href="/profile" class="menu__link r-link text-underlined">Profile</a></li>
+            <li class=" menu__group"><a href="data/LoL_Teams.json" download="LoL_Teams.json"
+                class="menu__link r-link" style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/json.png" alt="Logo"
+                style="display: block; width:50px; height: 50px;"></a></li>
+            <li class=" menu__group"><a href="data/LoL_Teams.csv" download="LoL_Teams.csv"
+                class="menu__link r-link" style="padding-top: 10px; padding-bottom: 8px;"><img src="../images/csv.png" alt="Logo"
+                style="display: block; width:50px; height: 50px;"></a></li>
+            <li class=" menu__group" style="margin-right: 0; margin-left: auto;"><a href="http://localhost:3000/logout" class="menu__link r-link text-underlined">
+             Log out </a> </li>
+        </nav>
+    </div>
+
+
+    <div class="centered-container">
+        <h1 style="font-size: 2.4em;">User data</h1>
+    </div>
+
+    <div class="centered-container container-grid container-grid-halves">
+       <div class="dataset">
+        <div class="dataset-entry">
+            Nickname: <%= user.nickname %>
+        </div>    
+        <div class="dataset-entry">
+            Name: <%= user.name %>
+        </div>
+        <div class="dataset-entry">
+            Last updated: <%= user.updated_at %>
+        </div> 
+        <div class="dataset-entry">
+            Email: <%= user.email %>
+        </div> 
+        <div class="dataset-entry">
+            Verified email: <%= user.email_verified %>
+        </div>
+       
+       </div>
+       <div>
+        <img class="scaled-image profile-border" alt="User profile img" src=<%= user.picture %>>
+       </div>
+    </div>
+     
+    <div class="centered-container">
+        <a class="btn btn:hover" href="/update">Update export data</a>
+    </div>
+    
+</body>
+</html>
